@@ -1,0 +1,130 @@
+@import "../variables";
+
+.contact {
+  text-align: center;
+  padding-top: 144px;
+  background-color: #343434;
+  padding-bottom: 149px;
+}
+
+.contact__title {
+  color: #fff;
+  letter-spacing: 0.01em;
+}
+
+.title__description_contact {
+  margin-top: 25px;
+  letter-spacing: 0.001em;
+}
+
+.decoration_drawings.contact_decoration_drawings {
+  margin-top: 25px;
+}
+
+.contact__info {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 67px;
+}
+
+.contact__info_block {
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.1);
+  padding-top: 94px;
+  text-align: left;
+  padding-bottom: 8px;
+}
+
+.contact__address_block {
+  width: 476px;
+  padding-left: 89px;
+}
+
+.contact__info_item {
+  padding-bottom: 61px;
+  color: #999;
+  font-size: 18px;
+  font-family: $main_text_font;
+}
+
+.location__title {
+  color: $active_text_color;
+  font-weight: $additional_text_semiBold;
+  letter-spacing: 0.01em;
+  padding-bottom: 19px;
+}
+
+.location__address {
+  line-height: 24px;
+  max-width: 265px;
+}
+
+.contact__phone_number {
+  text-decoration: none;
+  color: #999;
+  display: block;
+  cursor: pointer;
+  line-height: 24px;
+}
+
+.contact__email {
+  line-height: 24px;
+}
+
+.contact__form_block {
+  width: 665px;
+  padding-left: 100px;
+  padding-top: 95px;
+}
+
+.form__item {
+  margin-bottom: 23px;
+}
+
+.form__field {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #e5e5e5;
+  outline: none;
+  width: 464px;
+  padding-bottom: 17px;
+  font-size: 14px;
+
+  &::placeholder {
+    text-transform: capitalize;
+    font-family: $main_text_font;
+    font-weight: $main_text_semiBold;
+    font-size: 14px;
+    color: #999;
+    letter-spacing: 0.001em;
+  }
+}
+
+.contact__email {
+  margin-bottom: 26px;
+}
+
+.form__field_message {
+  resize: none;
+  padding-bottom: 81px;
+}
+
+.button_accent.button_accent_contact {
+  height: 44px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 4px;
+  line-height: 44px;
+  font-size: 14px;
+  margin-left: 2px;
+  font-family: $main_text_font;
+  font-weight: $bold_text;
+  letter-spacing: 0.01em;
+}
+
+
+

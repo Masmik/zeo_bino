@@ -1,0 +1,68 @@
+@import "../variables";
+
+.aboutUs{
+  background-color: $main-text-color;
+  display: block;
+  padding-top: 141px;
+  padding-bottom: 143px;
+}
+
+.aboutUs__image {
+  display: inline-block;
+  margin-right: 60px;
+}
+
+.aboutUs__info {
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 600px;
+  vertical-align: top;
+  padding-left: 5px;
+
+  .button_accent_aboutUs {
+    margin-top: 12px;
+    padding-left: 45px;
+    margin-left: 10px;
+    padding-right: 45px;
+  }
+}
+
+h2 {
+  color: #6a6a6a;
+  font-family: $additional_text_font;
+  font-weight: $bold_text;
+  font-size: 36px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.aboutUs__title {
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 40px;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    left: 10px;
+    background-color: $active_text_color;
+  }
+}
+
+.aboutUs__description {
+  font-family: $additional_text_font;
+  color: #999;
+  font-size: 14px;
+  padding-left: 9px;
+  line-height: 29px;
+  letter-spacing: 0.014em;
+  margin-bottom: 29px;
+  word-break: keep-all;
+  hyphens: auto;
+}
+
+
+

@@ -1,0 +1,25 @@
+
+.nav__items:hover::after{
+  width: 100%;
+  left: 0;
+}
+
+.nav__items::after{
+  content: '';
+  position: absolute;
+  top: calc(100% + 20px);
+  width: 0;
+  right: 0;
+  height: 1px;
+}
+
+.nav__items:after {
+  transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+  background: #f44336;
+}
+
+.nav__items.active:after{
+  transition-property: none;
+  background-color: transparent;
+}
+

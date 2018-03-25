@@ -1,0 +1,72 @@
+@import "../variables";
+@import "header";
+@import "introduction";
+
+.slider__block {
+  position: relative;
+  display: block;
+  width: 100%;
+  background-size: cover;
+  background: url('../img/sliderblock_bg2.jpg') 50% 0%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.decoration__circle {
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.decoration__circle_inside {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #f4f5f9 url('../img/icon_anchor.png') no-repeat 52% 50%;
+}
+
+.slider__decoration_circle {
+  bottom: -34px;
+  left: calc((100vw - 74px) / 2);
+}
+
+.slider__circle_inside {
+  left: 5px;
+  top: 5px;
+}
+
+.slider__block_angleBlock {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 123px;
+  overflow: hidden;
+}
+
+.slider__angle {
+  display: block;
+  position: absolute;
+  height: 123px;
+  background-color: #fff;
+  bottom: 0;
+  width: calc(50vw);
+  &_left {
+    left: -20px;
+    transform: rotate(7.35deg);
+    bottom: -79px;
+  }
+  &_right {
+    right: -20px;
+    transform: rotate(-7.35deg);
+    bottom: -79px;
+  }
+}
+
+
+
+

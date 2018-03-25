@@ -1,0 +1,161 @@
+@import "../variables";
+
+.integration {
+  text-align: center;
+  background-color: $main-text-color;
+  padding-top: 143px;
+  padding-bottom: 142px;
+}
+
+.integration__title {
+  letter-spacing: 0.005em;
+  margin-bottom: 26px;
+}
+
+.title__description_integration {
+  display: block;
+  margin-top: 7px;
+  letter-spacing: 0.001em;
+}
+
+.decoration_drawings.integration__decoration_drawings {
+  margin-top: 29px;
+  &::before, &::after {
+    background-color: #9a9a9a;
+  }
+}
+
+.integration__company_Block {
+  margin-top: 39px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.company__item {
+  position: relative;
+  width: 210px;
+  height: 100px;
+  margin-top: 28px;
+  box-shadow: 1px 1px 3px 0px rgba(31, 31, 31, 0.3);
+  cursor: pointer;
+  transition: all 0.5s ease;
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-color: #fff;
+    z-index: 2;
+    transition: opacity 0.5s ease;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  &:after {
+    background-color: #e74e3e;
+    z-index: 1;
+  }
+
+  &_osha {
+    &:before {
+      background-image: url('../img/companylogo_osha.png');
+    }
+    &:after {
+      background-image: url('../img/companylogo_osha_hover.png');
+    }
+  }
+
+  &_nycContractor {
+    &:before {
+      background-image: url('../img/companylogo_nyccontractor.png');
+    }
+    &:after {
+      background-image: url('../img/companylogo_nyccontractor_hover.png');
+    }
+  }
+
+  &_nyc {
+    &:before {
+      background-image: url('../img/companylogo_nyc.png');
+    }
+    &:after {
+      background-image: url('../img/companylogo_nyc_hover.png');
+    }
+  }
+
+  &_bbb {
+    &:before {
+      background-image: url('../img/companylogo_bbb.png');
+    }
+    &:after {
+      background-image: url('../img/companylogo_bbb_hover.png');
+    }
+  }
+
+  &_epa {
+    &:before {
+      background-image: url('../img/companylogo_epa.png');
+    }
+    &:after {
+      background-image: url('../img/companylogo_epa_hover.png');
+    }
+  }
+
+  &_dummy {
+    &:before {
+      background-image: url('../img/companylogo_dummy.png');
+    }
+    &:after {
+      background-image: url('../img/companylogo_dummy_hover.png');
+    }
+  }
+
+  &_logoType {
+    &:before {
+      background-image: url('../img/companylogo_logotype.png');
+    }
+    &:after {
+      background-image: url('../img/companylogo_logotype_hover.png');
+    }
+  }
+
+  &_imaginarium {
+    &:before {
+      background-image: url('../img/companylogo_imaginarium.png');
+    }
+    &:after {
+      background-image: url('../img/companylogo_imaginarium_hover.png');
+    }
+  }
+
+  &_randomBrand {
+    &:before {
+      background-image: url('../img/companylogo_randombrand.png');
+    }
+    &:after {
+      background-image: url('../img/companylogo_randombrand_hover.png');
+    }
+  }
+
+  &_anotherLogo {
+    &:before {
+      background-image: url('../img/companylogo_anotherlogo.png');
+    }
+    &:after {
+      background-image: url('../img/companylogo_anotherlogo_hover.png');
+    }
+  }
+
+  &:hover {
+    box-shadow: 1px 1px 10px 0px rgba(31, 31, 31, 0.3);
+
+    &:before {
+      opacity: 0;
+    }
+  }
+}
+

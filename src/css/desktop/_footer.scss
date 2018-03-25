@@ -1,0 +1,123 @@
+@import "../variables";
+
+footer {
+  position: relative;
+  width: 100%;
+  min-height: 90px;
+  background-color: #202020;
+}
+
+.footer__info {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+.socialMedia_block {
+  width: 299px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+}
+
+.socialMedia__logo {
+  display: block;
+  cursor: pointer;
+  width: 33px;
+  height: 20px;
+  transition: all 0.5s ease;
+
+  &_fb {
+    background: url('../img/sociallogo_fb.png') no-repeat;
+    &:hover {
+      background: url('../img/sociallogo_fb_hover.png') no-repeat;
+    }
+  }
+  &_twitter {
+    background: url('../img/sociallogo_twitter.png') no-repeat -3px 3px;
+    &:hover {
+      background: url('../img/sociallogo_twitter_hover.png') no-repeat -3px 3px;
+    }
+  }
+  &_rss {
+    background: url('../img/sociallogo_rss.png') no-repeat;
+    &:hover {
+      background: url('../img/sociallogo_rss_hover.png') no-repeat;
+    }
+  }
+  &_gplus {
+    background: url('../img/sociallogo_gplus.png') no-repeat;
+    &:hover {
+      background: url('../img/sociallogo_gplus_hover.png') no-repeat;
+    }
+  }
+  &_linkedin {
+    background: url('../img/sociallogo_in.png') no-repeat;
+    &:hover {
+      background: url('../img/sociallogo_in_hover.png') no-repeat;
+    }
+  }
+  &_skype {
+    background: url('../img/sociallogo_skype.png') no-repeat;
+    &:hover {
+      background: url('../img/sociallogo_skype_hover.png') no-repeat;
+    }
+  }
+  &_vimeo {
+    background: url('../img/sociallogo_vimeo.png') no-repeat 3px;
+    &:hover {
+      background: url('../img/sociallogo_vimeo_hover.png') no-repeat 3px;
+    }
+  }
+  &_tumbir {
+    background: url('../img/sociallogo_tumbir.png') no-repeat 8px;
+    &:hover {
+      background: url('../img/sociallogo_tumbir_hover.png') no-repeat 8px;
+    }
+  }
+
+}
+
+address {
+  width: 216px;
+  font-size: 14px;
+  font-family: $main_text_font;
+  font-weight: $bold_text;
+  color: #999;
+  letter-spacing: -0.015em;
+}
+
+.scroll {
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  background: $active_text_color;
+  position: fixed;
+  bottom: 64px;
+  right: 52px;
+  cursor: pointer;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    transform: rotate(45deg);
+    top: calc((100% - 10px) / 2);
+    left: calc((100% - 10px) / 2);
+
+  }
+}
+
+.scroll_hide {
+  display: none;
+}
+
+.scroll_show {
+  display: block;
+}

@@ -1,0 +1,47 @@
+//desktop
+@import "reset";
+@import "variables";
+@import "desktop/slider_block";
+@import "desktop/principles";
+@import "desktop/aboutus";
+@import "desktop/pricing";
+@import "desktop/integration";
+@import "desktop/contact";
+@import "desktop/footer";
+
+.content__block {
+  margin: 0 auto;
+  display: block;
+  max-width: 1170px;
+  color: $main-text-color;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+@import "animation/button";
+@import "animation/menu";
+
+//tablet
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  @import "tablet/header";
+  @import "tablet/introduction";
+  @import "tablet/principles";
+  @import "tablet/aboutus";
+  @import "tablet/pricing";
+  @import "tablet/integration";
+  @import "tablet/contact";
+  @import "tablet/footer";
+
+}
+
+//mobile
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  @import "mobile/header";
+  @import "mobile/introduction";
+  @import "mobile/principles";
+  @import "mobile/aboutus";
+  @import "mobile/pricing";
+  @import "mobile/integration";
+  @import "mobile/contact";
+  @import "mobile/footer";
+}

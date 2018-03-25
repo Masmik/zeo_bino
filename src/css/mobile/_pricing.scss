@@ -1,0 +1,51 @@
+.pricing {
+  padding-top: 50px;
+  padding-bottom: 0;
+  border-bottom: 1px solid #e6e7eb;
+}
+
+.pricing__packagesContainer {
+  margin-top: 50px;
+}
+
+.pricing__packagesContainer {
+  flex-flow: column wrap;
+}
+
+.pricing__package_name {
+  height: 125px;
+  padding-top: 38px;
+}
+.title__description{
+  line-height: 29px;
+}
+
+.pricing__package {
+  width: 100%;
+}
+
+.decoration__circle.pricing_decoration_circle {
+  width: 100px;
+  height: 100px;
+  top: 86px;
+  left: calc((100% - 100px) / 2);
+}
+
+.decoration__circle_inside.pricing__circle_inside {
+  width: 80px;
+  height: 80px;
+}
+
+.decoration__price {
+  font-size: 33px;
+  padding-top: 16px;
+}
+
+.decoration__description {
+  font-size: 12px;
+  padding-top: 0;
+}
+
+.pricing__description {
+  padding-top: 60px;
+}

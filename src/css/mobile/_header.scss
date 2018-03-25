@@ -1,0 +1,46 @@
+@import "../variables";
+
+header {
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+nav {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 93px;
+  background-color: #413f42;
+  background: linear-gradient(to bottom, rgba(65, 63, 66, 1) 1%, rgba(137, 115, 81, 1) 100%, rgba(60, 52, 49, 1) 100%);
+  padding-bottom: 20px;
+  z-index: 2;
+}
+
+.nav__items {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  padding-top: 35px;
+  margin-left: 0;
+
+  &.active, &:hover {
+    &:before {
+      bottom: -10px;
+    }
+  }
+
+}
+
+.introduction {
+  padding-top: 40px;
+}
+
+.nav__container {
+  order: 1;
+  display: block;
+  font-size: 52px;
+}
+
+.nav__container_active {
+  color: $active_text_color;
+}

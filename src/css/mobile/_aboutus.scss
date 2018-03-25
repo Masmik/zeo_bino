@@ -1,0 +1,26 @@
+.aboutUs{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.aboutUs__image{
+  display: none;
+}
+
+.aboutUs__title{
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-left: 0;
+  &:before{
+    display: none;
+  }
+}
+
+.aboutUs__description{
+  margin-bottom: 15px;
+}
+
+.aboutUs__info .button_accent_aboutUs {
+  display: block;
+  margin: 40px auto 0;
+}

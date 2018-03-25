@@ -1,0 +1,25 @@
+.contact {
+  padding-top: 86px;
+  padding-bottom: 0px;
+}
+
+.contact__address_block {
+  width: 100%;
+  padding-left: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  order: 2;
+}
+
+.contact__form_block {
+  width: 100%;
+  padding-right: 100px;
+  text-align: center;
+}
+.form__field{
+  width: 100%;
+}
+.contact__info_block{
+  box-shadow: none;
+}

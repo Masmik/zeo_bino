@@ -1,0 +1,126 @@
+@import "../variables";
+
+.pricing {
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 143px;
+}
+
+.pricing__title {
+  margin-left: 24px;
+}
+
+.title__description {
+  font-family: $main_text_font;
+  font-size: 14px;
+  color: #999;
+  letter-spacing: 0.015em;
+  margin-top: 22px;
+  display: inline-block;
+}
+
+.decoration_drawings.pricing_decoration_drawings {
+  margin-top: 29px;
+}
+
+.pricing__packagesContainer {
+  margin-top: 66px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.pricing__package {
+  position: relative;
+  width: 380px;
+  font-family: $main_text_font;
+  font-weight: $main_text_semiBold;
+}
+
+.pricing__package_name {
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  background-color: #999;
+  color: #fff;
+  padding-top: 47px;
+  font-size: 24px;
+  height: 205px;
+  letter-spacing: 0.099em;
+  padding-left: 3px;
+}
+
+.package__name_premium {
+  background-color: $active_text_color;
+}
+
+.pricing__description {
+  display: block;
+  background-color: $main-text-color;
+  color: #999;
+  font-size: 14px;
+  padding-top: 111px;
+}
+
+.description__item {
+  line-height: 40px;
+}
+
+.button.pricing__button {
+  margin-top: 37px;
+  height: 48px;
+  line-height: 46px;
+  letter-spacing: 0.02em;
+  padding-left: 33px;
+  padding-right: 32px;
+  background-color: #999;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .25);
+  margin-left: 2px;
+  margin-bottom: 49px;
+  border: none;
+}
+.pricing__button.button_accent{
+  background-color: $active_text_color;
+  margin-top: 37px;
+  height: 48px;
+  line-height: 46px;
+  letter-spacing: 0.02em;
+  padding-left: 33px;
+  padding-right: 32px;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .25);
+  margin-left: 2px;
+  margin-bottom: 49px;
+  border: none;
+}
+
+.decoration__circle.pricing_decoration_circle {
+  background-color: #f4f5f9;
+  width: 174px;
+  height: 172px;
+  top: 119px;
+  left: calc((100% - 174px)/ 2);
+}
+
+.decoration__circle_inside.pricing__circle_inside {
+  width: 152px;
+  height: 151px;
+  background: #fff none;
+  top: 11px;
+  left: 11px;
+}
+
+.decoration__price {
+  font-size: 40px;
+  padding-top: 44px;
+  color: #999;
+  font-family: $additional_text_font;
+  font-weight: $bold_text;
+}
+
+.decoration__description {
+  color: #999;
+  font-family: $additional_text_font;
+  font-size: 14px;
+  padding-top: 4px;
+}
