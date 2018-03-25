@@ -24,58 +24,131 @@ footer {
 }
 
 .socialMedia__logo {
+  position: relative;
   display: block;
   cursor: pointer;
   width: 33px;
   height: 20px;
-  transition: all 0.5s ease;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 33px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  &:after {
+    z-index: 0;
+    opacity: 0;
+  }
+
+  &:hover {
+    &:before {
+      opacity: 0;
+    }
+    &:after {
+      opacity: 1;
+    }
+  }
 
   &_fb {
-    background: url('../img/sociallogo_fb.png') no-repeat;
-    &:hover {
-      background: url('../img/sociallogo_fb_hover.png') no-repeat;
+    left: -2px;
+
+    &:before {
+      background-image: url('../img/sociallogo_fb.png');
+    }
+    &:after {
+      background-image: url('../img/sociallogo_fb_hover.png');
     }
   }
+
   &_twitter {
-    background: url('../img/sociallogo_twitter.png') no-repeat -3px 3px;
-    &:hover {
-      background: url('../img/sociallogo_twitter_hover.png') no-repeat -3px 3px;
+    top: 3px;
+    left: -5px;
+
+    &:before {
+      background-image: url('../img/sociallogo_twitter.png');
+    }
+    &:after {
+      background-image: url('../img/sociallogo_twitter_hover.png');
     }
   }
+
   &_rss {
-    background: url('../img/sociallogo_rss.png') no-repeat;
-    &:hover {
-      background: url('../img/sociallogo_rss_hover.png') no-repeat;
+    left: -3px;
+    top: 1px;
+
+    &:before {
+      background-image: url('../img/sociallogo_rss.png');
+    }
+    &:after {
+      background-image: url('../img/sociallogo_rss_hover.png');
     }
   }
+
   &_gplus {
-    background: url('../img/sociallogo_gplus.png') no-repeat;
-    &:hover {
-      background: url('../img/sociallogo_gplus_hover.png') no-repeat;
+    left: -1px;
+    top: 1px;
+
+    &:before {
+      background-image: url('../img/sociallogo_gplus.png');
+    }
+    &:after {
+      background-image: url('../img/sociallogo_gplus_hover.png');
     }
   }
+
   &_linkedin {
-    background: url('../img/sociallogo_in.png') no-repeat;
-    &:hover {
-      background: url('../img/sociallogo_in_hover.png') no-repeat;
+    left: -3px;
+    top: 1px;
+
+    &:before {
+      background-image: url('../img/sociallogo_in.png');
+    }
+    &:after {
+      background-image: url('../img/sociallogo_in_hover.png');
     }
   }
+
   &_skype {
-    background: url('../img/sociallogo_skype.png') no-repeat;
-    &:hover {
-      background: url('../img/sociallogo_skype_hover.png') no-repeat;
+    top: 1px;
+    left: -1px;
+
+    &:before {
+      background-image: url('../img/sociallogo_skype.png');
+    }
+    &:after {
+      background-image: url('../img/sociallogo_skype_hover.png');
     }
   }
+
   &_vimeo {
-    background: url('../img/sociallogo_vimeo.png') no-repeat 3px;
-    &:hover {
-      background: url('../img/sociallogo_vimeo_hover.png') no-repeat 3px;
+    top: 2px;
+    left: 1px;
+
+    &:before {
+      background-image: url('../img/sociallogo_vimeo.png');
+    }
+    &:after {
+      background-image: url('../img/sociallogo_vimeo_hover.png');
     }
   }
+
   &_tumbir {
-    background: url('../img/sociallogo_tumbir.png') no-repeat 8px;
-    &:hover {
-      background: url('../img/sociallogo_tumbir_hover.png') no-repeat 8px;
+    left: 6px;
+    top: 1px;
+
+    &:before {
+      background-image: url('../img/sociallogo_tumbir.png');
+    }
+    &:after {
+      background-image: url('../img/sociallogo_tumbir_hover.png');
     }
   }
 
