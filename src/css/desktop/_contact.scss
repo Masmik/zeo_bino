@@ -126,5 +126,6 @@
   letter-spacing: 0.01em;
 }
 
-
-
+.failed_validation {
+  border-bottom: 1px solid $active_text_color;
+}

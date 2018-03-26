@@ -201,7 +201,7 @@
                 </div>
             </aside>
             <aside class="contact__info_block contact__form_block">
-                <form autocomplete="on">
+                <form autocomplete="on" action="#">
                     <div class="form__item contact__name">
                         <input class="form__field" data-rule="required needName" id="name" name="name" type="text"
                                placeholder="name" pattern="[A-Za-z]{1,32}">
@@ -211,14 +211,14 @@
                                placeholder="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                     </div>
                     <div class="form__item contact__subject">
-                        <input class="form__field" data-rule="subject" id="subject" name="subject" type="text"
-                               placeholder="subject" pattern="[A-Za-z]{1,32}">
+                        <input class="form__field" data-rule="required" id="subject" name="subject" type="text"
+                               placeholder="subject">
                     </div>
                     <div class="form__item contact__message">
-                        <textarea class="form__field form__field_message" data-rule="message" id="message"
+                        <textarea class="form__field form__field_message" data-rule="required" id="message"
                                   name="message" placeholder="message"></textarea>
                     </div>
-                    <button type="button" class="button button_accent button_accent_contact">SEND MESSAGE</button>
+                    <button type="submit" class="button button_accent button_accent_contact">SEND MESSAGE</button>
                 </form>
             </aside>
         </div>
