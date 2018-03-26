@@ -1,7 +1,6 @@
 var validate = function () {
     var form = document.getElementsByTagName('form')[0];
     var errors = [];
-    console.log(form);
 
     form.addEventListener('submit', validation);
 
@@ -34,7 +33,6 @@ var validate = function () {
 
         for (var i = 0; i < errors.length; i++) {
             errors[i].el.classList.add('failed_validation');
-            console.log(errors[i].el);
         }
     }
 
@@ -43,7 +41,6 @@ var validate = function () {
         e.preventDefault();
 
         var inputs = this.elements;
-        console.log(this.elements);
 
         for (var i = 0, inputLength = inputs.length; i < inputLength; i++) {
 
